@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "566407154911",
+    "project_id": "quotespiration",
+    "storage_bucket": "quotespiration.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566407154911:android:9a5a8033fabe9c4159ed6a",
+        "android_client_info": {
+          "package_name": "com.example.quotespiration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "566407154911-er2p42sjpgcng5q8mguqqfp7o02qar8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlZZEia9zHZXa8KrtCojo56bP5BO2zvjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "566407154911-er2p42sjpgcng5q8mguqqfp7o02qar8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
