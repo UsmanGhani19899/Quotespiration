@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:quotespiration/Screens/Authentication/signin.dart';
 import 'package:quotespiration/Screens/quotesBottom.dart';
 import 'package:quotespiration/models/userModel.dart';
 
@@ -41,6 +42,15 @@ class Auth {
       await auth
           .signInWithEmailAndPassword(email: email, password: password)
           .then((value) => Get.offAll(const QuotesBottomBar()));
+    } catch (e) {
+      ScaffoldMessenger.of(context)
+          .showSnackBar(SnackBar(content: Text(e.toString())));
+    }
+  }
+
+  logout(BuildContext context) {
+    try {
+      auth.signOut().then((value) => Get.offAll(const SignIn()));
     } catch (e) {
       ScaffoldMessenger.of(context)
           .showSnackBar(SnackBar(content: Text(e.toString())));

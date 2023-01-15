@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:quotespiration/core/firebaseauth.dart';
 
 class Profile extends StatefulWidget {
   final Brightness? brightness;
@@ -75,6 +76,9 @@ class _ProfileState extends State<Profile> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15),
                 child: ListTile(
+                    onTap: () {
+                      Auth().logout(context);
+                    },
                     tileColor: Colors.grey.shade900.withOpacity(0.3),
                     title: Text(
                       'Logout'.toUpperCase(),

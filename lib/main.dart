@@ -1,10 +1,13 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:quotespiration/Screens/Authentication/singin.dart';
+import 'package:quotespiration/Screens/Authentication/signup.dart';
 import 'package:quotespiration/Screens/home.dart';
 import 'package:quotespiration/Screens/quotesBottom.dart';
 import 'package:quotespiration/Screens/splash.dart';
+
+import 'Screens/Authentication/signin.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,7 +27,7 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: Colors.white, brightness: Brightness.light),
       darkTheme: ThemeData(
           brightness: Brightness.dark, scaffoldBackgroundColor: Colors.black),
-      home: SignIn(),
+      home: SplashScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
